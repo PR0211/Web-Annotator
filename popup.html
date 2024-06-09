@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="popup.css">
+
+</head>
+<body>
+
+<div class="menubar">
+  <button class="dropdown-btn" style="text-align: center;" title="annotate(Alt + Shif + h)"  accesskey="h"><img src="colorpicker.png"></button>
+  <div class="dropdown-container">
+    <div class="aoptions">
+      <div class="scolor">
+        <div class="hcolor"><input type="color" value="#abff0f" id="scolor"></div>
+        <div class="acolor"><button id="selectcolor" title="select"><img src="select.png"></button></div>
+      </div>
+      <div class="styles">
+        <div class="anotesi"><input type="text" placeholder="Type note here" id="note"></div>
+        <div class="b"><button id="bold" title="bold"><b>B</b></button></div>
+        <div class="i"><button id="italic" title="italic"><i>I</i></button></div>
+        <div class="u"><button id="underline" title="underline"><u>U</u></button></div>
+      </div>
+    </div>
+
+      <div class="apply">
+        <button id="annotate" title="annotate"><img src="annotate.png"></button>
+      </div>
+  </div>
+
+  <button class="dropdown-btn" style="text-align: center;" title="Search(Alt + Shif + s)" accesskey="s"><img src="search.png"></button>
+  <div class="dropdown-container">
+    <div class="sakw">
+      <div class="ab"><input type="text" name="srchvl" id="srchvl"></div>
+      <div class="cd"><button id="srch"><img src="search.png"></button></div>
+    </div>
+    <div id="ds"></div>
+  </div>
+  <button class="dropdown-btn" style="text-align: center;" title="Search By Date(Alt + Shif + d)" accesskey="d"><img src="calendar.png"></button>
+  <div class="dropdown-container">
+    <div class="sadt">
+      <div class="ef"><input type="date" name="srchdt" id="srchdt"></div>
+      <div class="gh"><button id="srchkr"><img src="search.png"></button></div>
+    </div>
+    <div id="du"></div>
+  </div>
+  <button class="dropdown-btn" style="text-align: center;" title="Filter(Alt + Shif + f)" accesskey="f"><img src="filter.png"></button>
+  <div class="dropdown-container">
+    <div class="fbs">
+      <button id="fb"><b>B</b></button>
+      <button id="fi"><i>I</i></button>
+      <button id="fu"><u>U</u></button>
+    </div>
+    <div id="df"></div>
+  </div>
+  <button style="text-align: center;" id="retrieve" title="retrieve(Alt + Shif + r)" accesskey="r"><img src="retrieve.png"></button>
+</div>
+<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

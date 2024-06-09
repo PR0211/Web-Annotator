@@ -1,0 +1,154 @@
+body {
+  width: 300px;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.menubar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(83, 57, 156);
+  color: rgb(0, 0, 0);
+}
+
+button {
+  background-color: black;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+ 
+}
+.active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.dropdown-container {
+  display: none;
+  background-color: rgb(255, 255, 255);
+}
+img {
+  height: 24px;
+  width: 24px;
+}
+
+.scolor,.styles,.fbs,.sakw,.sadt{
+  display: flex;
+}
+.acolor{
+  width: 30%;
+}
+.hcolor{
+  width: 70%;
+}
+
+.anotesi{
+  width: 70%;
+  font-size: 20px;
+  
+}
+#fb,#fi,#fu{
+  width: 33.3333333%;
+}
+.ab,.ef{
+  width: 80%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.cd,.gh{
+  width: 20%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+#srchvl,#srchdt{
+  width: 80%;
+}
+#srch,#srchkr{
+  width: 90%;
+  border-radius: 8px;
+}
+.b,.i,.u{
+  width: 10%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+#bold,#italic,#underline{
+  border-radius: 8px;
+}
+#scolor{
+  width: 90%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+input{
+  width: 90%;
+  font-size: 18px;
+  margin: 2.5px;
+}
+#annotate {
+  position: relative;
+  background-color: #2521ed94;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#annotate:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#annotate:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+@media screen and (max-width: 700px) {
+  .menubar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .menubar button {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menubar button {
+    text-align: center;
+    float: none;
+  }
+}
